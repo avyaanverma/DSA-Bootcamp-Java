@@ -48,3 +48,105 @@
 1. [Max Value of Equation](https://leetcode.com/problems/max-value-of-equation/)
 2. [First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
 3. [Good Array](https://leetcode.com/problems/check-if-it-is-a-good-array/)
+
+
+# Java Programming Guide
+
+## 1. Introduction
+
+This guide provides an overview of key Java programming concepts, including ArrayList, constructors, methods, and basic operations on ArrayLists.
+
+## 2. ArrayList
+
+An `ArrayList` in Java is a resizable array, which can be found in the `java.util` package. Unlike arrays that have a fixed size, `ArrayList` can grow and shrink dynamically as elements are added or removed.
+
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create an ArrayList
+        ArrayList<String> fruits = new ArrayList<>();
+
+        // Add elements to the ArrayList
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Orange");
+
+        // Print the ArrayList
+        System.out.println(fruits);
+    }
+}
+```
+
+## Basic Operations on ArrayList
+### Add/Update Elements
+You can add elements to an ArrayList using the add method and update elements using the set method.
+
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> colors = new ArrayList<>();
+
+        // Add elements
+        colors.add("Red");
+        colors.add("Green");
+        colors.add("Blue");
+
+        // Update an element
+        colors.set(1, "Yellow");
+
+        System.out.println(colors);
+    }
+}
+```
+
+### Access Elements
+Elements in an ArrayList can be accessed using the get method and the size of the ArrayList can be determined using the size method.
+
+```java
+import java.util.ArrayList;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> animals = new ArrayList<>();
+
+        animals.add("Dog");
+        animals.add("Cat");
+        animals.add("Horse");
+
+        // Access elements
+        String firstAnimal = animals.get(0);
+        String secondAnimal = animals.get(1);
+
+        // Print elements
+        System.out.println("First Animal: " + firstAnimal);
+        System.out.println("Second Animal: " + secondAnimal);
+        System.out.println("Total Animals: " + animals.size());
+    }
+}
+```
+
+### Remove Elements
+Elements can be removed from an ArrayList using the remove method, either by specifying the element's index or by the element itself.
+```java
+import java.util.ArrayList;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> cities = new ArrayList<>();
+
+        cities.add("New York");
+        cities.add("Los Angeles");
+        cities.add("Chicago");
+
+        // Remove an element by index
+        cities.remove(1);
+
+        // Remove an element by value
+        cities.remove("Chicago");
+
+        System.out.println(cities);
+    }
+}
+```
